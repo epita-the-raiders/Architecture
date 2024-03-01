@@ -1,0 +1,41 @@
+body{
+	background-color: #0E273C;
+	text-align: center;
+	margin: 0;
+    padding: 0;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+	color: #fff;
+}
+
+.header {
+	position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+	padding: 10px;
+}
+
+#Title{
+	text-align: center;
+	font-size: 28px;
+	font-family: Verdana;
+	color: #008686;
+}
+
+#logo{
+	text-align: center;
+	height: 500px;
+	width: auto;
+}
+
+#school {
+	color: #0095CD;
+	font-weight: bold;
+}
