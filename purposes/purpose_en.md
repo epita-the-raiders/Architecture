@@ -1,0 +1,91 @@
+# [S4] Project
+## Group members
+### Project Manager
+> Maël ROUSTIT <mael.roustit@epita.fr><br/>
+GitHub : [Neogduh](https://github.com/Neogduh)
+
+### Collaborators
+> Axel OURY <axel.oury@epita.fr><br/>
+GitHub : [AxelOury](https://github.com/AxelOury)
+
+> Damien MARRASSE <damien.marrasse@epita.fr><br/>
+GitHub : [Dindam331](https://github.com/Dindam331)
+
+> Romain D'ANGE BOURGUIGNON <romain.d-ange-bourguignon@epita.fr><br/>
+GitHub : [Rom1DB](https://github.com/Rom1DB)
+
+## Purpose of `Raider's Architecture`
+![Raider's Architecture Logo](assets/icon.png)</br></br>
+For our S4 free project, we've come up with the idea of programming a house and apartment plan creator in the Rust programming language. This program will be designed for Linux via a Cargo installation.
+
+## Prerequisis and tools
+We're going to use the [Slint](https://crates.io/crates/slint) graphics library to create our graphical interface.
+
+## Details
+### Project presentation
+Our "Raider's Architecture" project is a software programme that allows you to generate plans for a flat or house after you have given it certain constraints, from the simple number of rooms to the minimum and maximum surface area of each room to plumbing or electricity. It may or may not be possible to find one or more solutions for fitting out your space.
+
+### Why the project?
+We have a number of project ideas, such as a text-to-sign language translator, game design software like Unity, and other small ideas that we haven't delved into as deeply. Then we asked ourselves what could be of real algorithmic interest, while at the same time being useful to all the members of our group. That's when we came up with the idea of a file explorer for Linux, but there wasn't enough of a challenge. As we love and play music, and don't have an absolute ear for it, we wondered whether a program that listens to and writes music could be developed. But this time, the promise was too great and we couldn't deliver. So we turned to our new idea, which had to do with architecture.
+
+### Why "Raider's Architecture"?
+Our group is called "The Raiders" after the game Tomb Raider, because we love video games and it was a real adventure to find a subject... Then, as the subject was architecture, the name "Raider's Architecture" came naturally to us.
+
+## Deployment
+|Deployment||
+|---:|:---|
+|**Language**|Rust|
+|**Platform target**|Linux|
+
+> [!TIP]
+> _If we have time, we would like to produce a version for Windows_
+
+## Project functionnalities and qualities
+### Requirements
+<br/>
+
+#### What **MUST** the project do?<br/>
+* Generating plans
+> The project is based initially on the fact that we can create a plan. To generate 1 or more images that are more or less complex plans of the future building.
+
+* A user-friendly interface
+> Insofar as the principle is that anyone who wants to use the software must be able to do so, whether at architectural level or not. We are therefore going to highlight the basic constraints, but it will still be possible to make the problem more complex at any time.
+
+* An algorithm
+> Obviously, we need to design one or more algorithms that will enable us to carry out the project. First of all, a plan generation algorithm, which will vary depending on the case, for example in the case of a flat or a house.
+
+<br/>
+
+#### What **SHOULD** the project do?<br/>
+* Others algorithms
+> Given that the aim is to optimise and propose as many constraints as possible, we would like to add to our programme a system for generating plans for additional considerations such as cost simulation or work planning. In addition, of course, to making the main algorithm more complex and optimising it.
+
+<br/>
+
+#### What **COULD** the project do?<br/>
+* Additionals algorithms
+> Still with a view to optimising and improving the algorithm, we could try to implement energy optimisation and other details.
+
+* Project management page
+> If we have time, we want to create a menu with which we can manage different projects, including a system for saving/uploading settings, for example.
+
+* Windows version
+> If we really have the time, we'd like to deploy the software on Windows using an .exe file.
+
+## Tasks allocation & completion estimation
+
+> [!IMPORTANT]  
+> Unfortunately, due to the time needed to find an acceptable project, we are unable to start the project for the first defence, hence the following 0%.
+
+> [!NOTE]  
+> This table is an outline of the work that each person will be required to lead. Let me explain: the person(s) in "Manager(s)" will be those in charge of the task's development, not necessarily those who will have to carry it out/develop it. We're keen to work as a team, so we won't be working on our own, but together under the direction of the task manager, who will report to the project manager, who will check with the task managers that the tasks are being carried out and will be on time.
+
+|**What ?**|**Manager(s)**|**presentation 1**|**presentation 2**|**presentation 3**|
+|:-:|:-:|:-:|:-:|:-:|
+|Main algorithms|Damien/Romain|<span style="color: #FF0000">0%</span>|<span style="color: #99FF00">70%</span>|<span style="color: #00FF00">100%</span>|
+|Secondary algorithms|Damien/Romain|<span style="color: #FF0000">0%</span>|<span style="color: #FFCC00">40%</span>|<span style="color: #00FF00">100%</span>|
+||||||
+|Interface|Axel|<span style="color: #FF3300">5%</span>|<span style="color: #FFFF00">50%</span>|<span style="color: #00FF00">100%</span>|
+|Project manager|Maël|<span style="color: #FF0000">0%</span>|<span style="color: #FF3300">10%</span>|<span style="color: #00FF00">100%</span>|
+||||||
+|WebSite|Maël|<span style="color: #FF3300">5%</span>|<span style="color: #33FF00">90%</span>|<span style="color: #00FF00">100%</span>|
