@@ -6,7 +6,8 @@ window.addEventListener('load', function() {
 });
 
 function switch_page_language() {
-    if (window.location.href.split("/").pop() === "index.html") {
+    let link = window.location.href.split("/").pop();
+    if (link === "index.html" || link === "") {
     window.location.href = "index_en.html";
     }
     else {
