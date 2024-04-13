@@ -22,8 +22,17 @@
 			</div>
 		</header>
 		<main>
-			<h1 id="Title">Projet S4 <span id="school">EPITA Toulouse</span></h1>
-			<img src="assets/icon.png" id="logo"/>
+			<h1 id="Title">Téléchargement</h1>
+			<div class="button-container">
+				<button class="download-button linux active" onclick="download('linux')">
+					<span class="log log-left"><img src="assets/linux.png" class="os_logo"/></span>
+					Télécharger pour Linux
+				</button>
+				<button class="download-button windows" onclick="download('windows')">
+					Télécharger pour Windows
+					<span class="log log-right"><img src="assets/windows.png" class="os_logo"/></span>
+				</button>
+			</div>
 		</main>
 		<footer>
 			<p>&copy; 2024 Raider's Architecture. Tous droits réservés.</p>

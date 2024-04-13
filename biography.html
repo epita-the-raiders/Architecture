@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>Raider's Architecture</title>
+		<link rel="icon" href="assets/logo.png" />
+		<meta charset="UTF-8">
+		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css'>
+		<link rel="stylesheet" href="style.css"/>
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<header class="header">
+			<img src="assets/logo.png" id="hlogo"/>
+			<div class="pages_buttons">
+				<button class="hbuttons" onclick="switch_index_page()">Acceuil</button>
+				<button class="hbuttons" onclick="switch_biography_page()">Groupe</button>
+				<button class="hbuttons" onclick="switch_download_page()">Téléchargement</button>
+				<button class="hbuttons" onclick="switch_bibliography_page()">Bibliographie</button>
+				<button class="hbuttons" onclick="switch_appendices_page()">Annexes</button>
+			</div>
+			<div class="lang_buttons">
+				<button class="hbuttons" onclick="switch_page_language()">[EN] Version</button>
+			</div>
+		</header>
+		<main>
+			<h1 id="Title">Groupe</h1>
+			<div class="persons">
+				<div class="person_box">
+					<img class="photo" src="assets/GroupMembers/mael.jpg"/>
+					<div class="card">
+						<h2>Maël ROUSTIT</h2>
+						<h3>Chef de projet</h3>
+						<p class="desc">Hello!</p>
+					</div>
+					<a href="https://github.com/Neogduh" target = "_blank" title="Voir le profil GitHub" class="git"><i class="fa-brands fa-github github"></i></a>
+				</div>
+				<div class="person_box">
+					<img class="photo" src="assets/GroupMembers/axel.jpg"/>
+					<div class="card">
+						<h2>Axel OURY</h2>
+						<h3>Responsable Interface</h3>
+						<p class="desc">Bonjour !</p>
+					</div>
+					<a href="https://github.com/AxelOury" target = "_blank" title="Voir le profil GitHub" class="git"><i class="fa-brands fa-github github"></i></a>
+				</div>
+				<div class="person_box">
+					<img class="photo" src="assets/GroupMembers/damien.jpg"/>
+					<div class="card">
+						<h2>Damien MARRASSÉ</h2>
+						<h3>Responsable Algo</h3>
+						<p class="desc">¡Hola!</p>
+					</div>
+					<a href="https://github.com/Dindam331" target = "_blank" title="Voir le profil GitHub" class="git"><i class="fa-brands fa-github github"></i></a>
+				</div>
+				<div class="person_box">
+					<img class="photo" src="assets/GroupMembers/romain.jpg"/>
+					<div class="card">
+						<h2>Romain D'ANGE BOURGUIGNON</h2>
+						<h3>Responsable Algo</h3>
+						<p class="desc">Coucou !</p>
+					</div>
+					<a href="https://github.com/Rom1DB" target = "_blank" title="Voir le profil GitHub" class="git"><i class="fa-brands fa-github github"></i></a>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<p>&copy; 2024 Raider's Architecture. Tous droits réservés.</p>
+		</footer>
+	</body>
+</html>

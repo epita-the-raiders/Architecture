@@ -7,10 +7,6 @@ Description: We will create an plan creator in RUST language
 > https://epita-the-raiders.github.io/architecture/
 
 ## Dependencies
-### Slint
-> Version 1.5.1
-### Openssl-sys
-> Version = 0.9.102, Features = ["vendored"]
 
 ## Installation
 Go on our WebSite above, in download page, you can download the file for your OS. Then run in the file:
