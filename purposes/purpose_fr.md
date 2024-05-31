@@ -72,6 +72,22 @@ Notre groupe s'appelle "The Raiders" en référence au jeu Tomb Raider, car nous
 * Windows version
 > Si nous avons vraiment le temps, nous aimerions déployer le logiciel sur Windows à l'aide d'un fichier .exe.
 
+## Liste des contraintes
+> Contraintes obligatoires
+- L'utilisateur pourra choisir le nombre de pièces, que ce soit au global de la maison ou par type de pièce.
+- L'utilisateur pourra choisir la taille de la maison et de chaque pièce individuellement, en termes de minimum, maximum ou fixe (l'algorithme traitera les erreurs, par exemple, demander un salon de 500 m² et une maison de 400 m² ne sera pas possible).
+- L'utilisateur pourra demander des maisons de plain-pied ou à étage, imposant ainsi un placement d'escalier par l'algorithme.
+- L'utilisateur pourra choisir l'orientation de la maison (plein sud pour la lumière, par exemple).
+- L'utilisateur pourra décider s'il veut des portes coulissantes ou battantes, ce qui impactera le design final.
+- L'utilisateur pourra choisir le nombre de fenêtres, que ce soit par pièce ou sur la maison globale (min, max, fixe).
+- L'utilisateur pourra décider de placer la maison sur un terrain (encore une fois, l'algorithme traitera les erreurs).
+
+> Contraintes facultatives
+- La gestion des murs porteurs devrait être possible, pour créer une maison en réaménageant une existante.
+- La maison créée sera optimisée énergétiquement pour consommer moins.
+- Les circuits d'eau et électriques seront pensés pour être bien placés, avec tout ce qui a besoin d'eau sur le même mur, par exemple.
+- Ajout de pièces diverses : un garage, une piscine, etc...
+
 ## Attribution des tâches et estimation de l'achèvement
 
 > [!IMPORTANT]  

@@ -72,6 +72,22 @@ Our group is called "The Raiders" after the game Tomb Raider, because we love vi
 * Windows version
 > If we really have the time, we'd like to deploy the software on Windows using an .exe file.
 
+## List of constraints
+> Mandatory constraints
+- The user can choose the number of rooms, either for the house as a whole or by room type.
+- The user will be able to choose the size of the house and each room individually, in terms of minimum, maximum or fixed (the algorithm will deal with errors, for example, asking for a 500 m² living room and a 400 m² house will not be possible).
+- Users will be able to request single-storey or two-storey homes, and the algorithm will impose a staircase placement.
+- Users can choose the orientation of the house (south-facing for light, for example).
+- Users can decide whether they want sliding or hinged doors, which will have an impact on the final design.
+- The user can choose the number of windows, either per room or for the house as a whole (min, max, fixed).
+- The user can decide to place the house on a plot of land (once again, the algorithm will deal with any errors).
+
+> Optional constraints
+- It should be possible to manage load-bearing walls to create a new house by redeveloping an existing one.
+- The new home will be optimised for energy consumption.
+- The water and electrical circuits will be designed to be well placed, with everything that needs water on the same wall, for example.
+- Adding various rooms: a garage, a swimming pool, etc...
+
 ## Tasks allocation & completion estimation
 
 > [!IMPORTANT]  
