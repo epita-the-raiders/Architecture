@@ -19,7 +19,7 @@ GitHub : [Rom1DB](https://github.com/Rom1DB)
 Pour notre projet libre de S4, nous avons eu l'idée de programmer un créateur de plans de maisons et d'appartements dans le langage de programmation Rust. Ce programme sera conçu pour Linux via une installation Cargo.
 
 ## Pré-requis et outils
-Nous allons utiliser la librairie graphique [Slint](https://crates.io/crates/slint) afin de créer notre interface graphique.
+Nous allons utiliser la librairie graphique [Slint](https://crates.io/crates/slint) afin de créer notre interface graphique. Nous utiliserons également les fichiers [svg](https://crates.io/crates/svg) et [resvg](https://crates.io/crates/svg) pour concevoir et présenter les plans.
 
 ## Details
 ### Presentation du projet
