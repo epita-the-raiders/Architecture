@@ -1,0 +1,16 @@
+[package]
+name = "raiders_architecture"
+version = "0.1.0"
+authors = ["ROUSTIT Maël <mael.roustit@epita.fr>", "D'ANGE-BOURGUIGNON Romain <romain.d-ange-bourguignon@epita.fr>","MARRASSE Damien <damien.marrasse@epita.fr>","OURY Axel <axel.oury@epita.fr>"]
+edition = "2021"
+homepage = "https://epita-the-raiders.github.io/architecture/"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+slint = "1.6.0"
+rand = "0.8.5"
+svg = "0.17.0"
+usvg = "0.18.0"
+tiny-skia = "0.6.0"
+resvg = "0.18.0"

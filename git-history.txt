@@ -1,0 +1,253 @@
+* ba0411c Ajout des DL
+* 1ee284a modif rapport
+* b98e8f1 Mise a jour cahier des charges
+* fbaa554 Ajout rapport final
+* bb8d9f4 Ajout historique de version sur le site
+* 3d2e13b Desc Romain
+* 8f41bec Modif desc Damien
+* aca1ca3 Modifications des liens du cahier des charges GitHub
+* 570a7b9 Modification README
+* 2eab20f correction orthographique
+* a733113 Mise a jout des cartes de persones
+* 3448f46 Edit rapide du site
+* d1fc635 Mise a jout DL
+* 736e3a3 Ajout de la version 0.0.5
+* 7cf37e3 Ajout desc temporaires
+* 79eae7b Fin biblio
+* 9693ad5 Biblio Axel + fix page biblio
+* ac25e7d Add rapport2 + bibliographie Mael
+* 62d9eb6 Ajout du code source + fix nom damien
+* ce27c34 Fix download
+* 66d9ef7 Ajout du rapport de soutenance 1 + fix Switch lang button en pages
+* 6c58404 Add english version of download
+* 81367c3 Fix ouverture des github dans une nouvelle page
+* de5f2dc Ajout des boutons de Download
+* c056c6a Ajout d'un pop-up pour le cahier des charges + Fix liens
+* b7b55b0 Fix GitHub button english page + add title on Buttons
+* 1f26bf0 Page Groupe 90%
+* 4b2ecce Ajout des bonton GitHub. Placement des images/Noms/texte comme il faut
+* 3c77524 Edit : "Le groupe" en "Groupe"
+* 70edd2e Add button "View on GitHub" and edit pages logo
+* f9e718b Changes to specifications en and add fr
+* 83e32f7 pb java script "elm doesn't exist" réglé
+* d75438e Switch entre les pages OK
+* da0e2e3 Mise a jour header dans toutes les pages
+* 84a2688 Alignement des bouton du header
+* f998f9d Add lueur logo + bouton Acceuil (faut aligner le EN version a droite mais ca marche pas)
+* 82ca9ee New header buttons
+* 143f7fd test header buttons
+* b023bc2 test switch buttons
+* 8ad2973 Test boutons icones
+* e2ee9f1 Ajout d'animations au boutons
+* 46222ad changement de logo
+* 556583a Centrage des bouton du header
+* 97b231c Test md in html
+* 9fbe2b9 création diférentes pages du site, amélioration du header
+* e78f1bf Fin V1 Site
+* abcba30 Swict language button
+* 92cd63d Bases New Site
+* 0638d6b V1 WebSite
+| * 932ada4 Editing of readme
+| | * 32d5c0f Ajout de l'instaler qui marche pas... ON aura essayer...
+| | * 675fb0f Ajout du no console
+| | *   519606e Merge branch 'main' into feature_buildrs
+| | |\  
+| | |/  
+| |/|   
+| * |   4999cb5 Merge branch 'release/0.1.0'
+| |\ \  
+| | * | 5f57169 clean release
+| | * | 771427f Finalisation projet
+| | * | a8846ce Plus qu'un BUG ALLERRRRR
+| | * |   92c8546 Merge branch 'feature_algo-display' into develop
+| | |\ \  
+| | | * | d49b33c Prepare for merge
+| | | * | 0c2e8e6 Modif main.rs
+| | | * | f626a98 test algo
+| | | * | f6ef9a6 create_svg a bit better
+| | | * | 11f2d0c render_svg_to_png fixed
+| | | * | 0398342 Clean branch
+| | | * | a6ea671 Plan perfect
+| | | * |   1f41961 Merge branch 'feature_algo-plan' into feature_algo-display
+| | | |\ \  
+| | | * | | 260f85a some fixes
+| | | * | | 8fea565 Fin pour aujd je vais canner
+| | | * | | ca94536 create_svg en cours
+| | | * | | 041f37f Render svg fonctionnel
+| | | * | | a59247f Ajout strcts
+| | | * | | 7bc892c Edit for work
+| | * | | | ddad4aa Clean partie algo principal
+| | * | | |   c0dafa0 Merge branch 'feature_interface' into develop
+| | |\ \ \ \  
+| | | * | | | 40e0a67 Ajout d'un bouton refresh + UI fix
+| | * | | | | e9da91f fix + remove println
+| | * | | | | fcdfc33 fix None mais avec coord des doors pas bon j'ff jpp
+| | |/ / / /  
+| | * | | | adb71c0 Mise a jour interface
+| | * | | | c780c4e Mise a jour purposes
+| | * | | |   cdd11b3 Merge branch 'feature_interface' into develop
+| | |\ \ \ \  
+| | | * | | | fe3e7fd Load a file OK
+| | | * | | | bfaee1f Load file en cours
+| | * | | | | 7a6e1fa removed println!
+| | |/ / / /  
+| | * | | | 2c2499c Merge algo 1 fini
+| | * | | |   6d90d16 Merge branch 'develop' of https://github.com/Neogduh/Projet-S4 into develop
+| | |\ \ \ \  
+| | | * | | | 5024a2b Tentative d'edit BUG + resol pb contraintes
+| | * | | | |   a16257f Merge branch 'feature_algo-plan' into develop
+| | |\ \ \ \ \  
+| | | |/ / / /  
+| | |/| | | |   
+| | | * | | | 7a92f15 fix
+| | * | | | | fe46c67 Ajout code main (BUG)
+| | * | | | | 2c40fe8 Clean algo plan files
+| | * | | | | 6a23446 Merge branch 'feature_algo-plan' into develop
+| | |\| | | | 
+| | | * | | | 3f25fb6 fix doors coordinates
+| | | * | | | c917b96 working on something
+| | | * | | | 0f5c81a fix positions
+| | | | |/ /  
+| | | |/| |   
+| | | * | | 1adf19b Finished (all work done)
+| | | * | | aed35d0 Almost finish (need upgrade for load)
+| | | * | | 0be0184 added create_rooms and generate_walls
+| | | * | | 6d35e8c Update Cargo.toml
+| | | * | | 3c607f4 Added create_connections
+| | | * | | 29a294c Big changes
+| | * | | | f3cfc22 Préparation pour main
+| | * | | | fca8e13 Préparation a l'ajout des algos
+| | * | | | c8a9ad7 Ajout du nom du fichier en haut a gauche du resultat
+| | * | | | 4c700df Une bonne chose de faite bordel... Création d'un fichier fini, plus qu'a link les algos
+| | * | | |   c6ca456 Merge branch 'feature_interface' of https://github.com/Neogduh/Projet-S4 into feature_interface
+| | |\ \ \ \  
+| | | * | | | 108eddf stop
+| | * | | | | ffe3959 création du fichier 90%
+| | |/ / / /  
+| | * | | |   b72afac Merge branch 'feature_interface' into develop
+| | |\ \ \ \  
+| | | * | | | 99c65a6 Edit comment like interface_bis
+| | | * | | | bb90ca2 Et hop ca ca saute avec la double
+| | | * | | | c0acf37 Virage des warnings
+| | | * | | | 46bf073 Résolution PB double marco FUCK OFF
+| | | * | | | 5a60dc7 JPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+| | | * | | |   47f49c5 Merge branch 'feature_interface_bis' into feature_interface
+| | | |\ \ \ \  
+| | | * | | | | 429cb38 Mise à niveau essentielle
+| | | * | | | | 82eb8f3 Ultime interface (Peut-etre le derneir push de cette branche)
+| | | * | | | | 42af98d ajout en cours
+| | | * | | | | c873082 teste de callback
+| | | * | | | | b69d140 petite modif
+| | | * | | | | 133e8d5 Restructuration
+| | | * | | | | 2b6ca3e Actualisation des critères en cours
+| | | * | | | | 8d82b97 ajout de critère
+| | | * | | | | a5cf7df Petite modification pour plus de clareté
+| | | * | | | | 2103252 Cargo definitif
+| | | * | | | | c1ff38a restauration pour mieux fonctionner effectuer
+| | | * | | | | 72bfcda C'est bon je me suis calibré sur ton style de présentation de programme Maël
+| | | * | | | | 48ac791 retest
+| | | * | | | | 7a446cf test
+| | | * | | | | 002447d new update
+| | | * | | | | a740f7e Modif pour mieux repartir
+| | | * | | | | d6bd339 Revert "Modif de l'interface"
+| | | | |/ / /  
+| | | |/| | |   
+| | * | | | | 0660bed Edit of README
+| | | |_|/ /  
+| | |/| | |   
+| * | | | | a25610f Clean release
+| | |/ / /  
+| |/| | |   
+| | | | * 48420f9 Création du build OK
+| | | |/  
+| | |/|   
+| | * | 04238f2 clean branch + edit pruposes
+| |/ /  
+| * | 0420c8a modif main
+| * | d3efc2c Delete slint + debut main
+| * |   63d9301 Merge branch 'feature_algo-display' into develop
+| |\ \  
+| | * | d616adb Structure + sauvegarde
+| | * | 14173ae FIANLLY dbfytvldihiglivgpgo
+| | * | 3341db3 Quite perfect except the last wall
+| | * | 1f038bb Right numbers of rooms but bad walls
+| | * | 63b4176 Walls added
+| | * | 7e4bc6c Micro opti
+| | * | 35ee6cc Width et length ok
+| | * | 6c03cdf Update main.rs
+| * | |   91990e5 Merge sur develop de l'interface
+| |\ \ \  
+| | * | | cb85b82 Modif de l'interface
+| | * | | 302cea8 On y croit
+| | * | | a75bbd3 Réparation en cours encore et encore
+| | * | | 4c1f2c4 Réparation en cours
+| | * | | b1edf20 Réparation en cours encore je vais finir par me tirer une balle
+| | * | | 978ffa3 Réparation en cours le mécano travaille
+| | * | | b6f492c test
+| | * | | d494f19 Réparation en cours
+| | * | | ad17243 Modif à tester sur l'ordi de l'école
+| | * | | c55f180 Amélioration préparation pour recevoir les programmes
+| | * | | 19c5020 J'ai fait deux modifs esthétiques et j'ai commencé la récupération des valeurs on verra ce qui sera pret pour la soutenance il faut que l'interface tourne je ne peux pas dire mieux et ce message est beaucoup trop long je ne sais pas si quelqu'un va le lire
+| | * | | 4ace73e On avance
+| | * | | 88605aa Amélioration interface Maël est-ce que tu peux tester s'il te plait ?
+| | * | | d22ce03 Amélioration de l'interface
+| | * | | 8e2d174 Amélioration de l'interface graphique
+| | * | | efb8151 Amélioration de l'interface graphique
+| | * | | dfe098d Amélioration de l'interface on avance petit à petit
+| | * | | 901e3f0 Restructuration en cours
+| | * | | 07a2d2d On avance petit à petit l'interface graphique prend forme
+| | * | | 71e5544 Slint fonctionne enfin ça y est
+| | * | | c2cce9f Nouvelle tentative en cours
+| | * | | bc1755e New update
+| | * | | 4b585d7 Modification pour que cela fonctionne mais cela ne fonctionne toujours pas désolé j'espère le faire fonctionner mardi ou mercredi
+| | * | | 3907b42 Ajout de critère en commentaire (Non fonctionnel pour l'instant)
+| | * | | 2b55478 Test de branche
+| | |/ /  
+| * | |   5cba416 Merge branch 'feature_algo-plan' into develop
+| |\ \ \  
+| | * | | c8d79cf Remove Romain's part
+| | * | | 7ff3799 Import correction
+| | * | | 4aa4209 Load feature
+| | |/ /  
+| * | |   33680c0 Merge branch 'feature_README' into develop
+| |\ \ \  
+| | |/ /  
+| |/| |   
+| | * | fd9b3c3 Modif readme
+| | * | eb4398a Mise a jour interface
+| | * | faa239c Modif README, Ajout purpose en et fr
+| | * | d2914bc Create V1 README
+| |/ /  
+|/| |   
+| | | * 6d5c9a2 Modif commentaires en anglais
+| | | * e35f937 Re-actualisation (PAS DE CALLBACK DE MERDE ENCORE CAR ÇA ME GONGLE À MORT)
+| | | * dd0a837 actualisation (PAS DE CALLBACK DE MERDE ENCORE CAR ÇA ME GONGLE À MORT)
+| | | * f2db853 test
+| | | * bf20184 Switch axel
+| | |/  
+| | * c50c6af virer un dbg
+| | * 23906da Système de chargement de fichier OK
+| | * c939fdf La page de resultat est maintenant dynamiquement chargée
+| | * 8ab432a Navigation inter-page faite
+| | * 8a9d19f Ajout de la page de display
+| | * 06654b8 Changement dynamique des pages OK
+| | * 59d3815 Restructuration fihier de sauvegarde, chargement des dernieres sauvegarde a l'ouverture ok + restructuration de code ( création d'un lib.rs et d'un mod.rs)
+| | * 649fab2 Charement dynamique d'images OK
+| | * 5efa665 Litle edit de la visibilité des pages
+| | * 3624eca Ajout de commentaire dans le code + images de test pour tester l'affichage
+| | * 6419756 Ajout fichier de saves, interface grille ok
+| | * cce23c1 Avancement sur l'interface du gestionnaire de projet
+| | * 4c39624 Restructuration du fichier + debut de l'interface du gestionnaire de projet
+| | * d8c74d5 Récupréation de donées via callback ok
+| | * ce1f5f0 Test des callbacks slint
+| | * eb56ddb Test slint
+| |/  
+| * 41ebbc3 Create project
+|/  
+* 589c85a Create AUTHORS
+* 21ed405 Reset for start workflow
+* c44b9ec Création du projet
+* aff3b4f Ajout Bases du Site
+* 0ad35ee Update README.md
+* 1137f3d Create AUTHORS
+* 2214f08 Initial commit

@@ -1,37 +1,50 @@
 <!DOCTYPE html>
 <html lang="fr">
-	<head>
-		<title>Raider's Architecture</title>
-		<link rel="icon" href="assets/logo.png" />
-		<meta charset="UTF-8">
-		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css'>
-		<link rel="stylesheet" href="style.css"/>
-		<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-		<script src="script.js"></script>
-	</head>
-	<body>
-		<header class="header">
-			<img src="assets/logo.png" id="hlogo"/>
-			<div class="pages_buttons">
-				<button class="hbuttons" onclick="switch_index_page()">Acceuil</button>
-				<button class="hbuttons" onclick="switch_biography_page()">Groupe</button>
-				<button class="hbuttons" onclick="switch_download_page()">Téléchargement</button>
-				<button class="hbuttons" onclick="switch_bibliography_page()">Bibliographie</button>
-				<button class="hbuttons" onclick="switch_appendices_page()">Annexes</button>
-			</div>
-			<div class="lang_buttons">
-				<button class="hbuttons" onclick="switch_page_language()">[EN] Version</button>
-			</div>
-		</header>
-		<main>
-			<h1 id="Title">Annexes</h1>
-			<h2 id="Title2">Code Source</h2>
-			<span class="center-button"><a href="https://github.com/epita-the-raiders/architecture/tree/main/RaidersArchitecture" target = "_blank" title="Ourvir le code source" class="git git-2"><i class="fa-brands fa-square-github"></i></a></span>
-			<h2 id="Title2">Cahier des charges</h2>
-			<button id="openPopupPurpose" class="VOGH">Ouvrir le cahier des charges</button>
-			<div id="popupPurpose" class="popup">
-				<div class="popup-content">
-					<div class="md">
+
+<head>
+	<title>Raider's Architecture</title>
+	<link rel="icon" href="assets/logo.png" />
+	<meta charset="UTF-8">
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css'>
+	<link rel="stylesheet" href="style.css" />
+	<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+	<script src="script.js"></script>
+</head>
+
+<body>
+	<header class="header">
+		<img src="assets/logo.png" id="hlogo" />
+		<div class="pages_buttons">
+			<button class="hbuttons" onclick="switch_index_page()">Accueil</button>
+			<button class="hbuttons" onclick="switch_biography_page()">Groupe</button>
+			<button class="hbuttons" onclick="switch_download_page()">Téléchargement</button>
+			<button class="hbuttons" onclick="switch_bibliography_page()">Bibliographie</button>
+			<button class="hbuttons" onclick="switch_appendices_page()">Annexes</button>
+		</div>
+		<div class="lang_buttons">
+			<button class="hbuttons" onclick="switch_page_language()">[EN] Version</button>
+		</div>
+	</header>
+	<main>
+		<h1 id="Title">Annexes</h1>
+		<h2 id="Title2">Code Source</h2>
+		<span class="center-button"><a
+				href="https://github.com/epita-the-raiders/architecture/tree/main/RaidersArchitecture" target="_blank"
+				title="Ourvir le code source" class="git git-2"><i class="fa-brands fa-square-github"></i></a></span>
+		<h2 id="Title2">Historique de version Git</h2>
+		<button class="VOGH"
+			onclick="openTab('github.com/epita-the-raiders/architecture')">
+			Version Texte
+		</button>
+		<button class="VOGH"
+			onclick="openTab('epita-the-raiders.github.io/architecture/git_history.html')">
+			Version Image (Git Graph)
+		</button>
+		<h2 id="Title2">Cahier des charges</h2>
+		<button id="openPopupPurpose" class="VOGH">Ouvrir le cahier des charges</button>
+		<div id="popupPurpose" class="popup">
+			<div class="popup-content">
+				<div class="md">
 # [S4] Project
 ## Membres du goupe
 ### Chef de projet
@@ -53,7 +66,7 @@ GitHub : [Rom1DB](https://github.com/Rom1DB)
 Pour notre projet libre de S4, nous avons eu l'idée de programmer un créateur de plans de maisons et d'appartements dans le langage de programmation Rust. Ce programme sera conçu pour Linux via une installation Cargo.
 
 ## Pré-requis et outils
-Nous allons utiliser la librairie graphique [Slint](https://crates.io/crates/slint) afin de créer notre interface graphique.
+Nous allons utiliser la librairie graphique [Slint](https://crates.io/crates/slint) afin de créer notre interface graphique. Nous utiliserons également les fichiers [svg](https://crates.io/crates/svg) et [resvg](https://crates.io/crates/svg) pour concevoir et présenter les plans.
 
 ## Details
 ### Presentation du projet
@@ -106,6 +119,22 @@ Notre groupe s'appelle "The Raiders" en référence au jeu Tomb Raider, car nous
 * Windows version
 > Si nous avons vraiment le temps, nous aimerions déployer le logiciel sur Windows à l'aide d'un fichier .exe.
 
+## Liste des contraintes
+> Contraintes obligatoires
+- L'utilisateur pourra choisir le nombre de pièces, que ce soit au global de la maison ou par type de pièce.
+- L'utilisateur pourra choisir la taille de la maison et de chaque pièce individuellement, en termes de minimum, maximum ou fixe (l'algorithme traitera les erreurs, par exemple, demander un salon de 500 m² et une maison de 400 m² ne sera pas possible).
+- L'utilisateur pourra demander des maisons de plain-pied ou à étage, imposant ainsi un placement d'escalier par l'algorithme.
+- L'utilisateur pourra choisir l'orientation de la maison (plein sud pour la lumière, par exemple).
+- L'utilisateur pourra décider s'il veut des portes coulissantes ou battantes, ce qui impactera le design final.
+- L'utilisateur pourra choisir le nombre de fenêtres, que ce soit par pièce ou sur la maison globale (min, max, fixe).
+- L'utilisateur pourra décider de placer la maison sur un terrain (encore une fois, l'algorithme traitera les erreurs).
+
+> Contraintes facultatives
+- La gestion des murs porteurs devrait être possible, pour créer une maison en réaménageant une existante.
+- La maison créée sera optimisée énergétiquement pour consommer moins.
+- Les circuits d'eau et électriques seront pensés pour être bien placés, avec tout ce qui a besoin d'eau sur le même mur, par exemple.
+- Ajout de pièces diverses : un garage, une piscine, etc...
+
 ## Attribution des tâches et estimation de l'achèvement
 
 > [!IMPORTANT]  
@@ -123,31 +152,40 @@ Notre groupe s'appelle "The Raiders" en référence au jeu Tomb Raider, car nous
 |Gestionnaire de projet|Maël|<span style="color: #FF0000">0%</span>|<span style="color: #FF3300">10%</span>|<span style="color: #00FF00">100%</span>|
 ||||||
 |Site internet|Maël|<span style="color: #FF3300">5%</span>|<span style="color: #33FF00">90%</span>|<span style="color: #00FF00">100%</span>|
-					</div>
-					<span class="close" id="closePopup">&times;</span>
 				</div>
+				<span class="close" id="closePopup">&times;</span>
 			</div>
-			<button class="VOGH" onclick="openTab('github.com/epita-the-raiders/architecture/blob/ffe478658fca8213778fa62eb49b2c03d48601c5/purposes/purpose_fr.md')">
-				Voir sur GitHub
-			</button>
-			</br>
-			<h2 id="Title2">Rapports de soutenances</h2>
-			<button id="openPopupDefense1" class="VOGH">Rapport de soutenance 1</button>
-			<div id="popupDefense1" class="popup">
-				<div class="popup-content">
-					<iframe src="assets/rapport1.pdf" width="600" height="800"></iframe>
-				</div>
+		</div>
+		<button class="VOGH"
+			onclick="openTab('github.com/epita-the-raiders/architecture/blob/ae07ec6b6432d9cae16b9755998072f643076e72/purposes/purpose_fr.md')">
+			Voir sur GitHub
+		</button>
+		</br>
+		<h2 id="Title2">Rapports de soutenances</h2>
+		<button id="openPopupDefense1" class="VOGH">Rapport de soutenance 1</button>
+		<div id="popupDefense1" class="popup">
+			<div class="popup-content">
+				<iframe src="assets/rapport1.pdf" width="600" height="800"></iframe>
 			</div>
-			</br>
-			<button id="openPopupDefense2" class="VOGH">Rapport de soutenance 2</button>
-			<div id="popupDefense2" class="popup">
-				<div class="popup-content">
-					<iframe src="assets/rapport2.pdf" width="600" height="800"></iframe>
-				</div>
+		</div>
+		</br>
+		<button id="openPopupDefense2" class="VOGH">Rapport de soutenance 2</button>
+		<div id="popupDefense2" class="popup">
+			<div class="popup-content">
+				<iframe src="assets/rapport2.pdf" width="600" height="800"></iframe>
 			</div>
-		</main>
-		<footer>
-			<p>&copy; 2024 Raider's Architecture. Tous droits réservés.</p>
-		</footer>
-	</body>
+		</div>
+		</br>
+		<button id="openPopupDefenseFinal" class="VOGH">Rapport de Projet</button>
+		<div id="popupDefenseFinal" class="popup">
+			<div class="popup-content">
+				<iframe src="assets/rapportFinal.pdf" width="600" height="800"></iframe>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<p>&copy; 2024 Raider's Architecture. Tous droits réservés.</p>
+	</footer>
+</body>
+
 </html>

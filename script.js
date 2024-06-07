@@ -14,8 +14,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const openPopupDefense1 = document.getElementById('openPopupDefense1');
     const openPopupDefense2 = document.getElementById('openPopupDefense2');
     const openPopupPurpose = document.getElementById('openPopupPurpose');
+    const openPopupDefenseFinal = document.getElementById('openPopupDefenseFinal')
     const popupDefense1 = document.getElementById('popupDefense1');
     const popupDefense2 = document.getElementById('popupDefense2');
+    const popupDefenseFinal = document.getElementById('popupDefenseFinal');
     const popupPurpose = document.getElementById('popupPurpose');
     const closeButton = document.getElementById('closePopup');
 
@@ -28,6 +30,12 @@ document.addEventListener('DOMContentLoaded', function() {
     if (openPopupDefense2) {
         openPopupDefense2.addEventListener('click', function() {
             popupDefense2.style.display = 'block';
+        });
+    }
+
+    if (openPopupDefenseFinal) {
+        openPopupDefenseFinal.addEventListener('click', function() {
+            popupDefenseFinal.style.display = 'block';
         });
     }
 
@@ -53,6 +61,14 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    if (popupDefenseFinal) {
+        popupDefenseFinal.addEventListener('click', function(event) {
+            if (event.target === popupDefenseFinal) {
+                popupDefenseFinal.style.display = 'none';
+            }
+        });
+    }
+
     if (popupPurpose) {
         popupPurpose.addEventListener('click', function(event) {
             if (event.target === popupPurpose) {
@@ -65,6 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
         closeButton.addEventListener('click', function() {
             popupDefense1.style.display = 'none';
             popupDefense2.style.display = 'none';
+            popupDefenseFinal.style.display = 'none';
             popupPurpose.style.display = 'none';
         });
     }
@@ -73,6 +90,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (event.key === 'Escape') {
             popupDefense1.style.display = 'none';
             popupDefense2.style.display = 'none';
+            popupDefenseFinal.style.display = 'none';
             popupPurpose.style.display = 'none';
         }
     });
@@ -228,18 +246,18 @@ function openTab(link) {
 function download(os) {
     if (window.location.href.split("/").pop().split("_").pop().split(".")[0] === "en") {
         if (os === "windows") {
-            alert("The Windows version is not and will not be available for this presentation.");
+            openTab("www.mediafire.com/file/x0uu6u74dh4jz9b/raiders_architecture.zip/file");
         }
         else if (os === "linux") {
-            openTab("www.mediafire.com/file/y8dk7qgrflg628s/RaidersArchitecture.tar.gz/file");
+            openTab("www.mediafire.com/file/0omrrb7nhhsfxsa/raiders_architecture.tar.gz/file");
         }
     }
     else {
         if (os === "windows") {
-            alert("La version Windows n'est et ne sera pas disponible pour cette présentation.");
+            openTab("www.mediafire.com/file/x0uu6u74dh4jz9b/raiders_architecture.zip/file");
         }
         else if (os === "linux") {
-            openTab("www.mediafire.com/file/y8dk7qgrflg628s/RaidersArchitecture.tar.gz/file");
+            openTab("www.mediafire.com/file/0omrrb7nhhsfxsa/raiders_architecture.tar.gz/file");
         }
     }
 }

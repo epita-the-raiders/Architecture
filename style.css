@@ -457,3 +457,7 @@ a {
 	background-color: #aaa;
 	border-radius: 50px;
 }
+
+.bar {
+	text-decoration: line-through;
+}
